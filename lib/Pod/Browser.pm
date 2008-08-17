@@ -4,30 +4,12 @@ use warnings;
 
 use Catalyst::Runtime '5.70';
 
-# Set flags and add plugins for the application
-#
-#         -Debug: activates the debug mode for very useful log messages
-#   ConfigLoader: will load the configuration from a Config::General file in the
-#                 application's home directory
-# Static::Simple: will serve static files from the application's root 
-#                 directory
-
 use parent qw/Catalyst/;
 
-our $VERSION = '0.01';
-
-# Configure the application. 
-#
-# Note that settings in pod_encyclopedia.conf (or other external
-# configuration file that you set up manually) take precedence
-# over this when using ConfigLoader. Thus configuration
-# details given here can function as a default configuration,
-# with a external configuration file acting as an override for
-# local deployment.
+our $VERSION = '0.02';
 
 __PACKAGE__->config( name => 'Pod::Browser' );
 
-# Start the application
 __PACKAGE__->setup(qw/ ConfigLoader Static::Simple/);
 
 
@@ -59,7 +41,42 @@ Have a look at L<http://cpan.org/authors/id/P/PE/PERLER/pod-images/pod-encyclope
 
 =head1 NOTICE
 
-This is the first release. There are probably a lot of bugs.
+This is the second release. There are probably a lot of bugs.
+
+=head1 CONFIGURATION
+
+First you have to locate the config file. Try
+
+  # locate pod_browser.yml
+
+in your command line and open it.
+
+=over
+
+=item inc (Boolean)
+
+Search for modules in @INC. Set it to 1 or 0.
+
+Defaults to C<0>.
+
+=item namespaces (Arrayref)
+
+Filter by namespaces. See L<Pod::Simple::Search> C<limit_glob> for syntax.
+
+Defaults to C<["*"]>
+
+=item self (Boolean)
+
+Search for modules in C<< $c->path_to( 'lib' ) >>.
+
+
+Defaults to C<1>.
+
+=item dirs (Arrayref)
+
+Search for modules in these directories.
+
+Defaults to C<[]>.
 
 =head1 STARTING THE SERVER
 
@@ -89,6 +106,11 @@ Check out the Catalyst::Engine namespace and see L<Catalyst::Manual::Cookbook/De
 
 There are some names of sections in some Pods which include special characters. There are still some problems with them.
 It would be helpful if you report these Pods so I can work around these cases.
+
+=head1 INTEGRATION IN CATALYST
+
+If you want to integrate this application directly into your catalyst application have a look at L<Catalyst::Controller::POD>.
+This controller is used by this application.
 
 =head1 SEE ALSO
 
