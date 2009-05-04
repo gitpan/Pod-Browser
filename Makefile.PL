@@ -5,6 +5,8 @@ use inc::Module::Install;
 name 'Pod-Browser';
 all_from 'lib/Pod/Browser.pm';
 
+repository 'http://github.com/monken/Pod-Browser/tree/master';
+
 requires 'Catalyst::Runtime' => '5.7014';
 requires 'Catalyst::Plugin::ConfigLoader';
 requires 'Catalyst::Plugin::Static::Simple';

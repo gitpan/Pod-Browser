@@ -1,4 +1,3 @@
-.project
 Changes
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
@@ -10,6 +9,7 @@ inc/Module/Install/Fetch.pm
 inc/Module/Install/Include.pm
 inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
+inc/Module/Install/Scripts.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/Pod/Browser.pm
@@ -30,7 +30,6 @@ root/static/images/btn_88x31_powered.png
 root/static/images/btn_88x31_powered_shadow.png
 root/static/images/catalyst_logo.png
 script/pod_browser_cgi.pl
-script/pod_browser_create.pl
 script/pod_browser_fastcgi.pl
 script/pod_browser_server.pl
 script/pod_browser_test.pl

@@ -6,7 +6,7 @@ use Catalyst::Runtime '5.70';
 
 use parent qw/Catalyst/;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 __PACKAGE__->config( name => 'Pod::Browser' );
 
@@ -19,7 +19,7 @@ Pod::Browser - Pod Web Server based on Catalyst and ExtJS
 
 =head1 SYNOPSIS
 
-  pod_browser_server.pl
+  # pod_browser_server.pl
 
   visit http://localhost:3030
 

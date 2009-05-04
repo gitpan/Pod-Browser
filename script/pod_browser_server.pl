@@ -14,7 +14,7 @@ use FindBin;
 use lib "$FindBin::Bin/../lib";
 
 my $debug             = 0;
-my $fork              = 0;
+my $fork              = 1;
 my $help              = 0;
 my $host              = undef;
 my $port              = $ENV{POD_BROWSER_PORT} || $ENV{CATALYST_PORT} || 3030;
