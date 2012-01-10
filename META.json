@@ -59,11 +59,11 @@
    "provides" : {
       "Pod::Browser" : {
          "file" : "lib/Pod/Browser.pm",
-         "version" : "v0.9.1"
+         "version" : "v1.0.0"
       },
       "Pod::Browser::Controller::Root" : {
          "file" : "lib/Pod/Browser/Controller/Root.pm",
-         "version" : "v0.9.1"
+         "version" : "v1.0.0"
       }
    },
    "release_status" : "stable",
@@ -79,7 +79,7 @@
          "web" : "http://github.com/monken/p5-pod-browser"
       }
    },
-   "version" : "0.9.1",
+   "version" : "1.0.0",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

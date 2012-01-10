@@ -9,7 +9,7 @@
 #
 package Pod::Browser;
 {
-  $Pod::Browser::VERSION = '0.9.1';
+  $Pod::Browser::VERSION = '1.0.0';
 }
 use strict;
 use warnings;
@@ -32,7 +32,7 @@ Pod::Browser - Pod Web Server based on Catalyst and ExtJS
 
 =head1 VERSION
 
-version 0.9.1
+version 1.0.0
 
 =head1 SYNOPSIS
 

@@ -56,7 +56,7 @@ pod_browser_fastcgi.pl
 
 =head1 VERSION
 
-version 0.9.1
+version 1.0.0
 
 =head1 SYNOPSIS
 

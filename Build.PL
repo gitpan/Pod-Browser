@@ -20,7 +20,7 @@ my %module_build_args = (
     "Moritz Onken <onken\@netcubed.de>"
   ],
   "dist_name" => "Pod-Browser",
-  "dist_version" => "0.9.1",
+  "dist_version" => "1.0.0",
   "license" => "bsd",
   "module_name" => "Pod::Browser",
   "recommends" => {},
