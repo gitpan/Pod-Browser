@@ -1,16 +1,4 @@
-#
-# This file is part of Pod-Browser
-#
-# This software is Copyright (c) 2012 by Moritz Onken.
-#
-# This is free software, licensed under:
-#
-#   The (three-clause) BSD License
-#
 package Pod::Browser;
-{
-  $Pod::Browser::VERSION = '0.9.1';
-}
 use strict;
 use warnings;
 # ABSTRACT: Pod Web Server based on Catalyst and ExtJS
@@ -22,17 +10,7 @@ __PACKAGE__->setup(qw/ ConfigLoader Static::Simple/);
 
 sub { __PACKAGE__->run( @_) }
 
-
-
-=pod
-
-=head1 NAME
-
-Pod::Browser - Pod Web Server based on Catalyst and ExtJS
-
-=head1 VERSION
-
-version 0.9.1
+__END__
 
 =head1 SYNOPSIS
 
@@ -54,7 +32,11 @@ There is also a TOC which is always visible and scrolls the current POD to the s
 It is written using a JavaScript framework called ExtJS (L<http://www.extjs.com>) which
 generates beautiful and rich user interfaces.
 
-=for html <p><center><img src="http://cpan.org/authors/id/P/PE/PERLER/pod-images/pod-encyclopedia-01.png" width="882" height="462" /></center></p>
+=begin html
+
+<p><center><img src="http://cpan.org/authors/id/P/PE/PERLER/pod-images/pod-encyclopedia-01.png" width="882" height="462" /></center></p>
+
+=end html
 
 =head1 CONFIGURATION
 
@@ -81,6 +63,7 @@ Defaults to C<["*"]>
 =item self (Boolean)
 
 Search for modules in C<< $c->path_to( 'lib' ) >>.
+
 
 Defaults to C<1>.
 
@@ -113,21 +96,3 @@ ExtJS (L<http://www.extjs.com>) is used for the user interface.
 Other Pod Web Servers:
 
 L<Pod::Server>, L<Pod::Webserver>, L<Pod::POM::Web>
-
-=head1 AUTHOR
-
-Moritz Onken <onken@netcubed.de>
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is Copyright (c) 2012 by Moritz Onken.
-
-This is free software, licensed under:
-
-  The (three-clause) BSD License
-
-=cut
-
-
-__END__
-

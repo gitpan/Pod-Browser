@@ -1,5 +1,14 @@
 #!/usr/bin/env perl
-
+#
+# This file is part of Pod-Browser
+#
+# This software is Copyright (c) 2012 by Moritz Onken.
+#
+# This is free software, licensed under:
+#
+#   The (three-clause) BSD License
+#
+# PODNAME: pod_browser_cgi.pl
 BEGIN { $ENV{CATALYST_ENGINE} ||= 'CGI' }
 
 use strict;
@@ -12,26 +21,28 @@ Pod::Browser->run;
 
 1;
 
+__END__
+=pod
+
 =head1 NAME
 
-pod_browser_cgi.pl - Catalyst CGI
+pod_browser_cgi.pl
 
-=head1 SYNOPSIS
+=head1 VERSION
 
-See L<Catalyst::Manual>
+version 0.9.1
 
-=head1 DESCRIPTION
+=head1 AUTHOR
 
-Run a Catalyst application as a cgi script.
+Moritz Onken <onken@netcubed.de>
 
-=head1 AUTHORS
+=head1 COPYRIGHT AND LICENSE
 
-Catalyst Contributors, see Catalyst.pm
+This software is Copyright (c) 2012 by Moritz Onken.
 
-=head1 COPYRIGHT
+This is free software, licensed under:
 
-
-This library is free software. You can redistribute it and/or modify
-it under the same terms as Perl itself.
+  The (three-clause) BSD License
 
 =cut
+

@@ -1,5 +1,14 @@
 #!/usr/bin/env perl
-
+#
+# This file is part of Pod-Browser
+#
+# This software is Copyright (c) 2012 by Moritz Onken.
+#
+# This is free software, licensed under:
+#
+#   The (three-clause) BSD License
+#
+# PODNAME: pod_browser_fastcgi.pl
 BEGIN { $ENV{CATALYST_ENGINE} ||= 'FastCGI' }
 
 use strict;
@@ -37,9 +46,17 @@ Pod::Browser->run(
 
 1;
 
+
+__END__
+=pod
+
 =head1 NAME
 
-pod_browser_fastcgi.pl - Catalyst FastCGI
+pod_browser_fastcgi.pl
+
+=head1 VERSION
+
+version 0.9.1
 
 =head1 SYNOPSIS
 
@@ -63,17 +80,17 @@ pod_browser_fastcgi.pl [options]
    -e -keeperr   send error messages to STDOUT, not
                  to the webserver
 
-=head1 DESCRIPTION
+=head1 AUTHOR
 
-Run a Catalyst application as fastcgi.
+Moritz Onken <onken@netcubed.de>
 
-=head1 AUTHORS
+=head1 COPYRIGHT AND LICENSE
 
-Catalyst Contributors, see Catalyst.pm
+This software is Copyright (c) 2012 by Moritz Onken.
 
-=head1 COPYRIGHT
+This is free software, licensed under:
 
-This library is free software. You can redistribute it and/or modify
-it under the same terms as Perl itself.
+  The (three-clause) BSD License
 
 =cut
+

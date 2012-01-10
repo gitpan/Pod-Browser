@@ -1,5 +1,14 @@
 #!/usr/bin/env perl
-
+#
+# This file is part of Pod-Browser
+#
+# This software is Copyright (c) 2012 by Moritz Onken.
+#
+# This is free software, licensed under:
+#
+#   The (three-clause) BSD License
+#
+# PODNAME: pod_browser_server.pl
 BEGIN {
     $ENV{CATALYST_ENGINE} ||= 'HTTP';
     $ENV{CATALYST_SCRIPT_GEN} = 39;
@@ -109,9 +118,17 @@ else {
 
 1;
 
+
+__END__
+=pod
+
 =head1 NAME
 
-pod_browser_server.pl - Catalyst Testserver
+pod_browser_server.pl
+
+=head1 VERSION
+
+version 0.9.1
 
 =head1 SYNOPSIS
 
@@ -144,17 +161,17 @@ pod_browser_server.pl [options]
    perldoc Catalyst::Manual
    perldoc Catalyst::Manual::Intro
 
-=head1 DESCRIPTION
+=head1 AUTHOR
 
-Run a Catalyst Testserver for this application.
+Moritz Onken <onken@netcubed.de>
 
-=head1 AUTHORS
+=head1 COPYRIGHT AND LICENSE
 
-Catalyst Contributors, see Catalyst.pm
+This software is Copyright (c) 2012 by Moritz Onken.
 
-=head1 COPYRIGHT
+This is free software, licensed under:
 
-This library is free software. You can redistribute it and/or modify
-it under the same terms as Perl itself.
+  The (three-clause) BSD License
 
 =cut
+
