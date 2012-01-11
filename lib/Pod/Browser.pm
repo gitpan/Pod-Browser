@@ -9,7 +9,7 @@
 #
 package Pod::Browser;
 {
-  $Pod::Browser::VERSION = '1.0.0';
+  $Pod::Browser::VERSION = '1.0.1';
 }
 use strict;
 use warnings;
@@ -20,7 +20,7 @@ use base qw/Catalyst/;
 __PACKAGE__->config( name => 'Pod::Browser' );
 __PACKAGE__->setup(qw/ ConfigLoader Static::Simple/);
 
-sub { __PACKAGE__->run( @_) }
+sub { __PACKAGE__->run( @_) };
 
 
 
@@ -32,7 +32,7 @@ Pod::Browser - Pod Web Server based on Catalyst and ExtJS
 
 =head1 VERSION
 
-version 1.0.0
+version 1.0.1
 
 =head1 SYNOPSIS
 

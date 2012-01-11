@@ -19,10 +19,10 @@ name: Pod-Browser
 provides:
   Pod::Browser:
     file: lib/Pod/Browser.pm
-    version: v1.0.0
+    version: v1.0.1
   Pod::Browser::Controller::Root:
     file: lib/Pod/Browser/Controller/Root.pm
-    version: v1.0.0
+    version: v1.0.1
 requires:
   Catalyst: 0
   Catalyst::Action::RenderView: 0
@@ -48,7 +48,7 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Browser
   homepage: http://search.cpan.org/dist/Pod-Browser/
   repository: git://github.com/monken/p5-pod-browser.git
-version: 1.0.0
+version: 1.0.1
 x_Dist_Zilla:
   plugins:
     -
